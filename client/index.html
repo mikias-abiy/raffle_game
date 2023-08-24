@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com" \>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin \>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,600&display=swap" rel="stylesheet">
+	<link rel="manifest" href="./manifest.json">
+	<link rel="stylesheet" href="./styles.css">
+	<!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
+	<!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+	<title>TikTok Live Raffle Game</title>
+</head>
+
+<body>
+	<noscript>
+		You need to enable JavaScript to run this app.
+	</noscript>
+  <main>
+    <div class="message"></div>
+    <div class="get-initialization-info">
+      <label for="unique-id">
+        Enter you TikTok username: 
+      </label>
+      <input id="unique-id" type="text">
+      <button type="submit" id="start">Start Raffle</button>
+    </div>
+    <div class="container">
+      <div class="last-winner">
+        <span class="value" id="last-winner">@last-winner</span>
+      </div>
+      <br>
+      <div class='middle-section'>
+        <div class='requirments'>
+          <div>Gift type: <span class="value"  id="required-gift-type"></span></div>
+          <div>Min Gift Amount: <span class="value" id="required-gift-amount"></span></div>
+          <div>Min Participants: <span class="value"  id="min-participant"></span></div>
+          <!-- <div>Min gift to start: <span class="value" id="min-gift-to-start">300</span></div>  -->
+        </div><!--
+        --><div class='total-amount'>
+          <div>Total Participants: <span class="value" id="total-participants">10</span></div>
+          <div>Total Amount: <span class="value"  id="total-amount">80</span></div>
+        </div>
+        <div class="raffle-status">
+          WAITING
+        </div>
+        <div class="live-notification">
+          <div class="winner"></div>
+          <div class="notifications"></div>
+          <div class="starter">
+            <div class="starter-body">
+              The game will start in:
+            </div>
+            <div class="starter-counter">
+              10
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
+
