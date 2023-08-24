@@ -1,0 +1,4 @@
+// {"type" : "start", "body" : {}}
+// once the server sends a go property with true value this request will be sent to the server
+// back
+// {"type" : "init", "body" : { "uniqueId": "@xxxlily04"}}
