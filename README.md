@@ -26,7 +26,7 @@ python3 -m http.server 3000
 Then file up a browser and enter this link in the URL section `localhost:3000`.
 If you followed the steps successfuly you should be greet with this page.
 
-![Landing Page](/images/landing_page.png)
+![Landing Page](/image/landing_page.png)
 
 If all is good we are gonna make our front end a wait little until we setup our backend.
 
