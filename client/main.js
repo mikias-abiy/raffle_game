@@ -87,7 +87,7 @@ function initGame () {
   lastWinner.textContent = gameInfo.lastWinner;
   requiredGift.textContent = gameInfo.requiredGift;
   minGiftAmount.textContent = gameInfo.minGiftAmount;
-  minParticipant.textContent = gameInfo.minParticipant + " %";
+  minParticipant.textContent = gameInfo.minParticipant;
   totalAmount.textContent = gameInfo.totalAmount
   totalParticipants.textContent = gameInfo.totalParticipants;
 
@@ -126,7 +126,7 @@ async function reflectUpdate () {
   }
   notifications.style.display = "none";
   
-  if (gameinfo.stop === true) {
+  if (gameInfo.stop === true) {
     displayMessage("warning", "Live stream has ended")
     websocket.close(1000)
   } else  if (gameInfo.go === true) {
