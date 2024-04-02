@@ -1,0 +1,2 @@
+websockets
+TikTokLive==5.0.8
